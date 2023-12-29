@@ -1,0 +1,380 @@
+{
+    "roomMaster": [
+        {
+            "projectType": "Residential",
+            "roomName": "Balcony / Verandah",
+            "roomShortCode": "BA",
+            "roomFullName": "Balcony / Verandah -BA",
+            "roomCode": "R01",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Bath 1",
+            "roomShortCode": "B1X",
+            "roomFullName": "Bath 1 -B1X",
+            "roomCode": "R02",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Bath 2",
+            "roomShortCode": "B2X",
+            "roomFullName": "Bath 2  -B2X",
+            "roomCode": "R03",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Bedroom 1",
+            "roomShortCode": "B1",
+            "roomFullName": "Bedroom 1  -B1",
+            "roomCode": "R04",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Bedroom 2",
+            "roomShortCode": "B2",
+            "roomFullName": "Bedroom 2  -B2",
+            "roomCode": "R05",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Bedroom 3",
+            "roomShortCode": "B3",
+            "roomFullName": "Bedroom 3  -B3",
+            "roomCode": "R06",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Children Bath",
+            "roomShortCode": "CBX",
+            "roomFullName": "Children Bath -CBX",
+            "roomCode": "R07",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Children Bed",
+            "roomShortCode": "CB",
+            "roomFullName": "Children Bed -CB",
+            "roomCode": "R08",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Children Dressing",
+            "roomShortCode": "CBY",
+            "roomFullName": "Children Dressing -CBY",
+            "roomCode": "R09",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Powder Bath /Common Bath",
+            "roomShortCode": "PRX",
+            "roomFullName": "Powder Bath /Common Bath -PRX",
+            "roomCode": "R10",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Daughter Bath",
+            "roomShortCode": "DBX",
+            "roomFullName": "Daughter Bath -DBX",
+            "roomCode": "R11",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Daughter Bed",
+            "roomShortCode": "DB",
+            "roomFullName": "Daughter Bed -DB",
+            "roomCode": "R12",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Daughter Dressing",
+            "roomShortCode": "DBY",
+            "roomFullName": "Daughter Dressing -DBY",
+            "roomCode": "R13",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Dinning Room",
+            "roomShortCode": "DR",
+            "roomFullName": "Dinning Room -DR",
+            "roomCode": "R14",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Entrance Passage",
+            "roomShortCode": "EP",
+            "roomFullName": "Entrance Passage -EP",
+            "roomCode": "R15",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Family Room",
+            "roomShortCode": "FB",
+            "roomFullName": "Family Room -FB",
+            "roomCode": "R16",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Guest Bath",
+            "roomShortCode": "GBX",
+            "roomFullName": "Guest Bath  -GBX",
+            "roomCode": "R17",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Guest Bed",
+            "roomShortCode": "GB",
+            "roomFullName": "Guest Bed -GB",
+            "roomCode": "R18",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Guest Dressing",
+            "roomShortCode": "GBY",
+            "roomFullName": "Guest Dressing -GBY",
+            "roomCode": "R19",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Home Theatre",
+            "roomShortCode": "HT",
+            "roomFullName": "Home Theatre -HT",
+            "roomCode": "R20",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Informal Living / Sitting  Room",
+            "roomShortCode": "IL",
+            "roomFullName": "Informal Living / Sitting  Room -IL",
+            "roomCode": "R21",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Kitchen Area",
+            "roomShortCode": "KA",
+            "roomFullName": "Kitchen Area -KA",
+            "roomCode": "R22",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Lift Lobby",
+            "roomShortCode": "LL",
+            "roomFullName": "Lift Lobby -LL",
+            "roomCode": "R23",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Living Room",
+            "roomShortCode": "LR",
+            "roomFullName": "Living Room -LR",
+            "roomCode": "R24",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Master Bath",
+            "roomShortCode": "MBX",
+            "roomFullName": "Master Bath -MBX",
+            "roomCode": "R25",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Master Bed",
+            "roomShortCode": "MB",
+            "roomFullName": "Master Bed -MB",
+            "roomCode": "R26",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Master Dressing",
+            "roomShortCode": "MBY",
+            "roomFullName": "Master Dressing -MBY",
+            "roomCode": "R27",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Parents Bath",
+            "roomShortCode": "PBX",
+            "roomFullName": "Parents Bath -PBX",
+            "roomCode": "R28",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Parents Bed",
+            "roomShortCode": "PB",
+            "roomFullName": "Parents Bed -PB",
+            "roomCode": "R29",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Parents Dressing",
+            "roomShortCode": "PBY",
+            "roomFullName": "Parents Dressing -PBY",
+            "roomCode": "R30",
+            "floor": "Same Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Servant /Attendant Bath",
+            "roomShortCode": "ARX",
+            "roomFullName": "Servant /Attendant Bath -ARX",
+            "roomCode": "1R01",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Servant /Attendant Room",
+            "roomShortCode": "AR",
+            "roomFullName": "Servant /Attendant Room  -AR",
+            "roomCode": "1R02",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Son Dressing",
+            "roomShortCode": "SBY",
+            "roomFullName": "Son Dressing -SBY",
+            "roomCode": "1R03",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Sons Bath",
+            "roomShortCode": "SBX",
+            "roomFullName": "Sons Bath -SBX",
+            "roomCode": "1R04",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Sons Bed",
+            "roomShortCode": "SB",
+            "roomFullName": "Sons Bed -SB",
+            "roomCode": "1R05",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Study Room",
+            "roomShortCode": "SR",
+            "roomFullName": "Study Room -SR",
+            "roomCode": "1R06",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Temple/Puja Room",
+            "roomShortCode": "TR",
+            "roomFullName": "Temple/Puja Room -TR",
+            "roomCode": "1R07",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Utility",
+            "roomShortCode": "UR",
+            "roomFullName": "Utility -UR",
+            "roomCode": "1R08",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "AC Outdoor Cable",
+            "roomShortCode": "AO",
+            "roomFullName": "AC Outdoor Cable -AO",
+            "roomCode": "1R09",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Main Line Trunking",
+            "roomShortCode": "MLT",
+            "roomFullName": "Main Line Trunking -MLT",
+            "roomCode": "1R10",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Temporary Lighting Arrangement",
+            "roomShortCode": "TLA",
+            "roomFullName": "Temporary Lighting Arrangement -TLA",
+            "roomCode": "1R11",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Main Distribution Board",
+            "roomShortCode": "MDB",
+            "roomFullName": "Main Distribution Board -MDB",
+            "roomCode": "1R12",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Residential",
+            "roomName": "Main Line Cable",
+            "roomShortCode": "MLC",
+            "roomFullName": "Main Line Cable -MLC",
+            "roomCode": "1R13",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Director Cabin",
+            "roomShortCode": "DC",
+            "roomFullName": "Director Cabin -DC",
+            "roomCode": "1R14",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Director Bath Room",
+            "roomShortCode": "DX",
+            "roomFullName": "Director Bath Room -DX",
+            "roomCode": "1R15",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Chairman Cabin",
+            "roomShortCode": "CC",
+            "roomFullName": "Chairman Cabin -CC",
+            "roomCode": "1R16",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Chairman Bath Room",
+            "roomShortCode": "CX",
+            "roomFullName": "Chairman Bath Room -CX",
+            "roomCode": "1R17",
+            "floor": "1st Floor"
+        }
+    ]
+}

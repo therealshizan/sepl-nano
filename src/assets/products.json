@@ -1,0 +1,147 @@
+{
+  "products": [
+    {
+      "srNo": 1,
+      "product": "Anti-Rust Coating",
+      "mrp1Litre": 35398.82,
+      "netRate": 29999,
+      "approxApplicationCoverageAreaPerLitre": "1000 sq. ft.",
+      "approxCostPerSqFt": 30,
+      "costOf100MlRsExclusiveOfGst": 2999.9,
+      "shelfLife": {
+        "unopenedPack": "24 months",
+        "openedPack": "6 months"
+      }
+    },
+    {
+      "srNo": 3,
+      "product": "Wall Coating",
+      "mrp1Litre": 3538.82,
+      "netRate": 2999,
+      "approxApplicationCoverageAreaPerLitre": "100 sq. ft.",
+      "approxCostPerSqFt": 29.99,
+      "costOf100MlRsExclusiveOfGst": 299.9,
+      "shelfLife": {
+        "unopenedPack": "24 months",
+        "openedPack": "12 months"
+      }
+    },
+    {
+      "srNo": 4,
+      "product": "Anti-moisture Coating",
+      "mrp1Litre": 17698.82,
+      "netRate": 14999,
+      "approxApplicationCoverageAreaPerLitre": "700-800 sq. ft.",
+      "approxCostPerSqFt": 20,
+      "costOf100MlRsExclusiveOfGst": 1499.9,
+      "shelfLife": {
+        "unopenedPack": "24 months",
+        "openedPack": "12 months"
+      }
+    },
+    {
+      "srNo": 5,
+      "product": "Glass Coating",
+      "mrp1Litre": 11500.28,
+      "netRate": 9746,
+      "approxApplicationCoverageAreaPerLitre": "1000 sq. ft.",
+      "approxCostPerSqFt": 9.75,
+      "costOf100MlRsExclusiveOfGst": 974.6,
+      "shelfLife": {
+        "unopenedPack": "12 months",
+        "openedPack": "6 months"
+      }
+    },
+    {
+      "srNo": 6,
+      "product": "Fabric, Textile & Leather Coating",
+      "mrp1Litre": 3498.7,
+      "netRate": 2965,
+      "approxApplicationCoverageAreaPerLitre": null,
+      "approxCostPerSqFt": 29.65,
+      "costOf100MlRsExclusiveOfGst": 296.5,
+      "shelfLife": {
+        "unopenedPack": "24 months",
+        "openedPack": "12 months"
+      }
+    },
+    {
+      "srNo": 7,
+      "product": "Solar Coating",
+      "mrp1Litre": 11750.44,
+      "netRate": 9958,
+      "approxApplicationCoverageAreaPerLitre": "900-1000 sq. ft.",
+      "approxCostPerSqFt": 10.48,
+      "costOf100MlRsExclusiveOfGst": 995.8,
+      "shelfLife": {
+        "unopenedPack": "12 months",
+        "openedPack": "6 months"
+      }
+    },
+    {
+      "srNo": 8,
+      "product": "Ceramic Coating",
+      "mrp1Litre": 11350.42,
+      "netRate": 9619,
+      "approxApplicationCoverageAreaPerLitre": "800-900 sq. ft.",
+      "approxCostPerSqFt": 11.32,
+      "costOf100MlRsExclusiveOfGst": 961.9,
+      "shelfLife": {
+        "unopenedPack": "24 months",
+        "openedPack": "6 months"
+      }
+    },
+    {
+      "srNo": 9,
+      "product": "Hard Plastic Coating",
+      "mrp1Litre": 10998.78,
+      "netRate": 9321,
+      "approxApplicationCoverageAreaPerLitre": "1100 sq. ft.",
+      "approxCostPerSqFt": 8.47,
+      "costOf100MlRsExclusiveOfGst": 932.1,
+      "shelfLife": {
+        "unopenedPack": "24 months",
+        "openedPack": "12 months"
+      }
+    },
+    {
+      "srNo": 10,
+      "product": "Metal Shine & Water Repellent Coating",
+      "mrp1Litre": 19151.4,
+      "netRate": 16230,
+      "approxApplicationCoverageAreaPerLitre": "700 sq. ft.",
+      "approxCostPerSqFt": 23.19,
+      "costOf100MlRsExclusiveOfGst": 1623.0,
+      "shelfLife": {
+        "unopenedPack": "24 months",
+        "openedPack": "12 months"
+      }
+    },
+    {
+      "srNo": 11,
+      "product": "Raw Timber Coating",
+      "mrp1Litre": 2712.82,
+      "netRate": 2299,
+      "approxApplicationCoverageAreaPerLitre": "100 sq. ft.",
+      "approxCostPerSqFt": 22.99,
+      "costOf100MlRsExclusiveOfGst": 229.9,
+      "shelfLife": {
+        "unopenedPack": "24 months",
+        "openedPack": "12 months"
+      }
+    },
+    {
+      "srNo": 12,
+      "product": "Bio Cleaner - Hard Variant",
+      "mrp1Litre": 1799,
+      "netRate": 1525,
+      "approxApplicationCoverageAreaPerLitre": "800 sq. ft.",
+      "approxCostPerSqFt": 1.9,
+      "costOf100MlRsExclusiveOfGst": 152.5,
+      "shelfLife": {
+        "unopenedPack": "12 months",
+        "openedPack": "12 months"
+      }
+    }
+  ]
+}
