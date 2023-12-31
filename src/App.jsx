@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Typography, Stack } from "@mui/material";
+import { Typography, Stack, Container } from "@mui/material";
 
 import "./App.css";
 
@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <EntriesContext.Provider value={{ entries, setEntries }}>
-      <Box p={8} py={4}>
+      <Container>
         <Typography variant="h6" sx={{ m: 2, mb: 0, fontWeight: 600 }}>
           Estimate Calculation For Coating With NanoMagic
         </Typography>
@@ -22,11 +22,11 @@ const App = () => {
           Please Enter Your Details
         </Typography>
 
-        <Stack direction={'row'}>
+        <Stack direction={'column-reverse'}>
         <MainForm />
         <EntriesTable />
         </Stack>
-      </Box>
+      </Container>
     </EntriesContext.Provider>
   );
 };

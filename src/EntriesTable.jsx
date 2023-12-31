@@ -40,6 +40,7 @@ const EntriesTable = () => {
   const downloadCSV = () => {
     // Include headers
     const headers = [
+      "Area Type",
       "Area Name",
       "Length",
       "Breadth",
@@ -85,7 +86,7 @@ const EntriesTable = () => {
               <TableCell sx={headCellStyles}>Breadth</TableCell>
               <TableCell sx={headCellStyles}>Total Area</TableCell>
               <TableCell sx={headCellStyles}>Selected Product</TableCell>
-              <TableCell sx={headCellStyles}>Qunatity Required</TableCell>
+              <TableCell sx={headCellStyles}>Quantity Required</TableCell>
               <TableCell sx={headCellStyles}>Bottles Required</TableCell>
               <TableCell sx={headCellStyles}>Total Cost</TableCell>
             </TableRow>
