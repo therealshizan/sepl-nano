@@ -23,23 +23,34 @@ const Popup = ({ open, onClose, downloadCSV }) => {
     setEmail(e.target.value);
   };
 
-  const handleSubmit = () => {
-    // You can perform actions with the user details here
-    if(name.trim() !== "" && phone.trim() !== "" && email.trim() !== ""){
-      console.log("Name:", name);
-      console.log("Phone:", phone);
-      console.log("Email:", email);
+  const handleSubmit = async () => {
+    // Check if required fields are filled
+    if (name.trim() !== "" && phone.trim() !== "" && email.trim() !== "") {
+      try {
+        // Send data to the server
+        const response = await fetch("http://localhost/sepl-nano-server/index.php", {
+          method: "POST",
+          body: JSON.stringify({ name, phone, email }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
 
-      downloadCSV();
-      onClose();
-    }else{
-      alert("Please Fill All Required Fields")
+        // Handle server response
+        const data = await response.json();
+
+        // Perform additional actions
+        downloadCSV();
+        onClose();
+      } catch (error) {
+        console.error(error);
+      }
+    } else {
+      // Display an alert if required fields are not filled
+      alert("Please Fill All Required Fields");
     }
-
-
-
-    // Close the dialog
   };
+
 
   const getData = async () => {
     const response = await fetch("userData.json", {
