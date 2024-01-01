@@ -3,6 +3,8 @@ import React, { useContext, useRef, useState } from "react";
 import {
   Button,
   Link,
+  List,
+  ListItem,
   Stack,
   Table,
   TableBody,
@@ -10,6 +12,7 @@ import {
   TableContainer,
   TableHead,
   TableRow,
+  Typography,
 } from "@mui/material";
 import { EntriesContext } from "./EntriesContext";
 import Popup from "./Popup";
@@ -85,6 +88,7 @@ const EntriesTable = () => {
 
   const handlePrint = useReactToPrint({
     content: () => TableRef.current,
+    copyStyles: true
   });
 
 
@@ -142,6 +146,17 @@ const EntriesTable = () => {
             </TableRow>
           </TableBody>
         </Table>
+
+
+        <Stack mt={3} display={!openPopup ? 'none' : 'block'}>
+          <Typography variant="body1" fontWeight={600}>Terms and conditions:-</Typography>
+          <List disablePadding sx={{ listStyleType: 'disc' }}>
+            <ListItem sx={{ display: 'list-item' }} disablePadding><Typography variant="body2">These are product cost estimation only.</Typography></ListItem>
+            <ListItem sx={{ display: 'list-item' }} disablePadding><Typography variant="body2">Application/Labour cost is not included in case required.</Typography></ListItem>
+            <ListItem sx={{ display: 'list-item' }} disablePadding><Typography variant="body2">Actual quotation will be send to you by mail after you receive a call from our office and post site visit by our representative for actual measurements if necessary.</Typography></ListItem>
+            <ListItem sx={{ display: 'list-item' }} disablePadding><Typography variant="body2">Additional GST of 18% will be applicable on invoice / quotation mailed to you.</Typography></ListItem>
+          </List>
+        </Stack>
       </TableContainer>
 
       <Stack mt={2}>
@@ -158,7 +173,7 @@ const EntriesTable = () => {
           }}
           sx={{ bgcolor: '#D7B56D', '&:hover': { bgcolor: '#D7B56D' } }}
         >
-          Submit & Download Data
+          Submit & Print Data
         </Button>
       </Stack>
 

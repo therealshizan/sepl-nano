@@ -91,6 +91,7 @@ const Popup = ({ open, onClose, downloadCSV, handlePrint }) => {
             margin="normal"
             value={name}
             onChange={handleNameChange}
+            size="small"
           />
           <TextField
             label="Phone"
@@ -100,6 +101,7 @@ const Popup = ({ open, onClose, downloadCSV, handlePrint }) => {
             value={phone}
             type="tel"
             onChange={handlePhoneChange}
+            size="small"
           />
           <TextField
             label="Email"
@@ -109,6 +111,7 @@ const Popup = ({ open, onClose, downloadCSV, handlePrint }) => {
             value={email}
             type="email"
             onChange={handleEmailChange}
+            size="small"
           />
           <Stack>
             <Typography variant="body1" fontWeight={600}>Terms and conditions:-</Typography>
@@ -123,7 +126,7 @@ const Popup = ({ open, onClose, downloadCSV, handlePrint }) => {
         <DialogActions>
           <Button sx={{ color: '#D7B56D' }} onClick={onClose}>Cancel</Button>
           <Button sx={{ bgcolor: '#D7B56D', '&:hover': { bgcolor: '#D7B56D' } }} disabled={loading} endIcon={loading && <CircularProgress />} onClick={handleSubmit} variant="contained">
-            {loading ? 'Please Wait' : 'Submit & Download'}
+            {loading ? 'Please Wait' : 'Submit & Print'}
           </Button>
         </DialogActions>
       </Dialog>
