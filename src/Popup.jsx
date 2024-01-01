@@ -5,9 +5,9 @@ import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import TextField from "@mui/material/TextField";
-import { CircularProgress } from "@mui/material";
+import { CircularProgress, List, ListItem, Stack, Typography } from "@mui/material";
 
-const Popup = ({ open, onClose, downloadCSV }) => {
+const Popup = ({ open, onClose, downloadCSV, handlePrint }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -44,7 +44,7 @@ const Popup = ({ open, onClose, downloadCSV }) => {
       })
         .then((response) => response.json())
         .then((data) => {
-          downloadCSV()
+          handlePrint()
           setLoading(false)
           onClose();
           console.log(data.message);
@@ -110,10 +110,19 @@ const Popup = ({ open, onClose, downloadCSV }) => {
             type="email"
             onChange={handleEmailChange}
           />
+          <Stack>
+            <Typography variant="body1" fontWeight={600}>Terms and conditions:-</Typography>
+            <List disablePadding sx={{ listStyleType: 'disc' }}>
+              <ListItem sx={{ display: 'list-item' }} disablePadding><Typography variant="body2">These are product cost estimation only.</Typography></ListItem>
+              <ListItem sx={{ display: 'list-item' }} disablePadding><Typography variant="body2">Application/Labour cost is not included in case required.</Typography></ListItem>
+              <ListItem sx={{ display: 'list-item' }} disablePadding><Typography variant="body2">Actual quotation will be send to you by mail after you receive a call from our office and post site visit by our representative for actual measurements if necessary.</Typography></ListItem>
+              <ListItem sx={{ display: 'list-item' }} disablePadding><Typography variant="body2">Additional GST of 18% will be applicable on invoice / quotation mailed to you.</Typography></ListItem>
+            </List>
+          </Stack>
         </DialogContent>
         <DialogActions>
-          <Button sx={{color: '#D7B56D'}} onClick={onClose}>Cancel</Button>
-          <Button sx={{bgcolor: '#D7B56D', '&:hover': {bgcolor: '#D7B56D'}}} disabled={loading} endIcon={loading && <CircularProgress/>} onClick={handleSubmit} variant="contained">
+          <Button sx={{ color: '#D7B56D' }} onClick={onClose}>Cancel</Button>
+          <Button sx={{ bgcolor: '#D7B56D', '&:hover': { bgcolor: '#D7B56D' } }} disabled={loading} endIcon={loading && <CircularProgress />} onClick={handleSubmit} variant="contained">
             {loading ? 'Please Wait' : 'Submit & Download'}
           </Button>
         </DialogActions>

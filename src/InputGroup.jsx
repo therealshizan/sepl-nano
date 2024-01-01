@@ -9,6 +9,7 @@ import {
 import products from "./assets/products.json";
 import roomMaster from "../public/roomMaster.json";
 import { EntriesContext } from "./EntriesContext";
+import { numberWithIndianFormat } from "./utils/numbers";
 
 const InputGroup = () => {
   const [areas, setAreas] = useState([])
@@ -217,7 +218,7 @@ const InputGroup = () => {
           {formData.areaName === "" ? "Area" : formData.areaName} will need{" "}
           {result.bottlesRequired} bottles to cover the area.
         </span>
-        <span style={{ fontSize: '0.9rem' }}>The total cost will be Rs. {result.totalCost}</span>
+        <span style={{ fontSize: '0.9rem' }}>The total cost will be ₹ {numberWithIndianFormat(parseInt(result.totalCost))}</span>
       </div>
     </div>
   );

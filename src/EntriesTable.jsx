@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import {
   Button,
   Link,
@@ -13,6 +13,8 @@ import {
 } from "@mui/material";
 import { EntriesContext } from "./EntriesContext";
 import Popup from "./Popup";
+import { numberWithIndianFormat } from "./utils/numbers";
+import { useReactToPrint } from "react-to-print";
 
 const headCellStyles = {
   fontSize: "12px",
@@ -32,6 +34,8 @@ const bodyCellStyles = {
 
 const EntriesTable = () => {
   const { entries } = useContext(EntriesContext);
+
+  const TableRef = useRef();
 
   const [openPopup, setOpenPopup] = useState(false);
 
@@ -77,11 +81,19 @@ const EntriesTable = () => {
     (acc, entry) => acc + parseFloat(entry.result.totalCost),
     0
   );
+
+
+  const handlePrint = useReactToPrint({
+    content: () => TableRef.current,
+  });
+
+
+
   return (
     <div style={{ flex: 1, margin: "2rem", marginRight: 0, marginTop: 0 }}>
-      <TableContainer>
+      <TableContainer ref={TableRef}>
         <Table>
-          <TableHead sx={{bgcolor: '#fff', '&:hover': {bgcolor: '#fff'}}}>
+          <TableHead sx={{ bgcolor: '#fff', '&:hover': { bgcolor: '#fff' } }}>
             <TableRow>
               <TableCell sx={headCellStyles}>Area Name</TableCell>
               <TableCell sx={headCellStyles}>Length</TableCell>
@@ -118,7 +130,7 @@ const EntriesTable = () => {
                   {parseFloat(entry.result.bottlesRequired)}
                 </TableCell>
                 <TableCell sx={bodyCellStyles}>
-                  ₹{parseFloat(entry.result.totalCost).toFixed(2)}
+                  ₹ {numberWithIndianFormat(entry.result.totalCost)}
                 </TableCell>
               </TableRow>
             ))}
@@ -126,7 +138,7 @@ const EntriesTable = () => {
               <TableCell colSpan={7} sx={bodyCellStyles} align="right">
                 Total Cost:
               </TableCell>
-              <TableCell sx={bodyCellStyles}>₹{totalCost.toFixed(2)}</TableCell>
+              <TableCell sx={bodyCellStyles}>₹ {numberWithIndianFormat(totalCost)}</TableCell>
             </TableRow>
           </TableBody>
         </Table>
@@ -138,13 +150,13 @@ const EntriesTable = () => {
           variant="contained"
           // href="mailto:shaikhshizan1181@gmail.com?subject={subject}&body={body}"
           onClick={() => {
-            if(entries.length == 0){
+            if (entries.length == 0) {
               alert("No Data Found!")
-            }else{
+            } else {
               setOpenPopup(!openPopup);
             }
           }}
-          sx={{bgcolor: '#D7B56D', '&:hover': {bgcolor: '#D7B56D'}}}
+          sx={{ bgcolor: '#D7B56D', '&:hover': { bgcolor: '#D7B56D' } }}
         >
           Submit & Download Data
         </Button>
@@ -155,6 +167,7 @@ const EntriesTable = () => {
           open={openPopup}
           onClose={handleClosePopup}
           downloadCSV={downloadCSV}
+          handlePrint={handlePrint}
         />
       )}
     </div>
