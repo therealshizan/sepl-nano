@@ -1,7 +1,6 @@
 import { useState } from "react";
 import InputGroup from "./InputGroup";
 import { ButtonGroup, Button } from "@mui/material";
-import theme from "./theme";
 
 const colors = {
   success: "#007e33",
@@ -33,7 +32,7 @@ const MainForm = () => {
         <Button
           size="small"
           onClick={addMoreArea}
-          sx={{ color: '#fff' }}
+          sx={{bgcolor: '#D7B56D', '&:hover': {bgcolor: '#D7B56D'}}}
         >
           Add More Area
         </Button>

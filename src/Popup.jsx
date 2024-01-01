@@ -6,7 +6,6 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import TextField from "@mui/material/TextField";
 import { CircularProgress } from "@mui/material";
-import theme from "./theme";
 
 const Popup = ({ open, onClose, downloadCSV }) => {
   const [name, setName] = useState("");
@@ -113,8 +112,8 @@ const Popup = ({ open, onClose, downloadCSV }) => {
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={onClose}>Cancel</Button>
-          <Button disabled={loading} endIcon={loading && <CircularProgress/>} onClick={handleSubmit} variant="contained" color={theme.palette.primary.main}>
+          <Button sx={{color: '#D7B56D'}} onClick={onClose}>Cancel</Button>
+          <Button sx={{bgcolor: '#D7B56D', '&:hover': {bgcolor: '#D7B56D'}}} disabled={loading} endIcon={loading && <CircularProgress/>} onClick={handleSubmit} variant="contained">
             {loading ? 'Please Wait' : 'Submit & Download'}
           </Button>
         </DialogActions>
