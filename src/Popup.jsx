@@ -5,11 +5,15 @@ import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import TextField from "@mui/material/TextField";
+import { CircularProgress } from "@mui/material";
+import theme from "./theme";
 
 const Popup = ({ open, onClose, downloadCSV }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+
+  const [loading, setLoading] = useState(false)
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -23,34 +27,43 @@ const Popup = ({ open, onClose, downloadCSV }) => {
     setEmail(e.target.value);
   };
 
-  const handleSubmit = async () => {
-    // Check if required fields are filled
+  const handleSubmit = () => {
+    // You can perform actions with the user details here
     if (name.trim() !== "" && phone.trim() !== "" && email.trim() !== "") {
-      try {
-        // Send data to the server
-        const response = await fetch("http://localhost/sepl-nano-server/index.php", {
-          method: "POST",
-          body: JSON.stringify({ name, phone, email }),
-          headers: {
-            "Content-Type": "application/json",
-          },
+      console.log("Name:", name);
+      console.log("Phone:", phone);
+      console.log("Email:", email);
+
+
+      setLoading(true)
+      fetch("https://seplnanomagic.com/server/index.php", {
+        method: "POST",
+        body: JSON.stringify({ name, phone, email }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          downloadCSV()
+          setLoading(false)
+          onClose();
+          console.log(data.message);
+        })
+        .catch((error) => {
+          console.error(error);
         });
 
-        // Handle server response
-        const data = await response.json();
 
-        // Perform additional actions
-        downloadCSV();
-        onClose();
-      } catch (error) {
-        console.error(error);
-      }
+
     } else {
-      // Display an alert if required fields are not filled
-      alert("Please Fill All Required Fields");
+      alert("Please Fill All Required Fields")
     }
-  };
 
+
+
+    // Close the dialog
+  };
 
   const getData = async () => {
     const response = await fetch("userData.json", {
@@ -68,43 +81,45 @@ const Popup = ({ open, onClose, downloadCSV }) => {
   getData();
 
   return (
-    <Dialog open={open} onClose={onClose}>
-      <DialogTitle>Enter Your Details</DialogTitle>
-      <DialogContent>
-        <TextField
-          label="Name"
-          variant="outlined"
-          fullWidth
-          margin="normal"
-          value={name}
-          onChange={handleNameChange}
-        />
-        <TextField
-          label="Phone"
-          variant="outlined"
-          fullWidth
-          margin="normal"
-          value={phone}
-          type="tel"
-          onChange={handlePhoneChange}
-        />
-        <TextField
-          label="Email"
-          variant="outlined"
-          fullWidth
-          margin="normal"
-          value={email}
-          type="email"
-          onChange={handleEmailChange}
-        />
-      </DialogContent>
-      <DialogActions>
-        <Button onClick={onClose}>Cancel</Button>
-        <Button onClick={handleSubmit} variant="contained" color="primary">
-          Submit & Download
-        </Button>
-      </DialogActions>
-    </Dialog>
+    <>
+      <Dialog open={open} onClose={onClose}>
+        <DialogTitle>Enter Your Details</DialogTitle>
+        <DialogContent>
+          <TextField
+            label="Name"
+            variant="outlined"
+            fullWidth
+            margin="normal"
+            value={name}
+            onChange={handleNameChange}
+          />
+          <TextField
+            label="Phone"
+            variant="outlined"
+            fullWidth
+            margin="normal"
+            value={phone}
+            type="tel"
+            onChange={handlePhoneChange}
+          />
+          <TextField
+            label="Email"
+            variant="outlined"
+            fullWidth
+            margin="normal"
+            value={email}
+            type="email"
+            onChange={handleEmailChange}
+          />
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={onClose}>Cancel</Button>
+          <Button disabled={loading} endIcon={loading && <CircularProgress/>} onClick={handleSubmit} variant="contained" color={theme.palette.primary.main}>
+            {loading ? 'Please Wait' : 'Submit & Download'}
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </>
   );
 };
 

@@ -13,6 +13,7 @@ import {
 } from "@mui/material";
 import { EntriesContext } from "./EntriesContext";
 import Popup from "./Popup";
+import theme from "./theme";
 
 const headCellStyles = {
   fontSize: "12px",
@@ -20,6 +21,8 @@ const headCellStyles = {
   padding: 1,
   lineHeight: 1,
   fontWeight: 500,
+  color: '#fff',
+  fontWeight: 600
 };
 const bodyCellStyles = {
   fontSize: "12px",
@@ -79,7 +82,7 @@ const EntriesTable = () => {
     <div style={{ flex: 1, margin: "2rem", marginRight: 0, marginTop: 0 }}>
       <TableContainer>
         <Table>
-          <TableHead sx={{ bgcolor: "#0199CC90" }}>
+          <TableHead sx={{bgcolor: theme.palette.primary.main, '&:hover': {bgcolor: theme.palette.primary.main}}}>
             <TableRow>
               <TableCell sx={headCellStyles}>Area Name</TableCell>
               <TableCell sx={headCellStyles}>Length</TableCell>
@@ -142,6 +145,7 @@ const EntriesTable = () => {
               setOpenPopup(!openPopup);
             }
           }}
+          sx={{color: '#fff'}}
         >
           Submit & Download Data
         </Button>

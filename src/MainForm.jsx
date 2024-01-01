@@ -1,6 +1,7 @@
 import { useState } from "react";
 import InputGroup from "./InputGroup";
 import { ButtonGroup, Button } from "@mui/material";
+import theme from "./theme";
 
 const colors = {
   success: "#007e33",
@@ -28,10 +29,11 @@ const MainForm = () => {
           m: 2,
         }}
         variant="contained"
-        >
+      >
         <Button
-        size="small"
+          size="small"
           onClick={addMoreArea}
+          sx={{ color: '#fff' }}
         >
           Add More Area
         </Button>

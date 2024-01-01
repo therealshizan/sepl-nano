@@ -9,6 +9,7 @@ import {
 import products from "./assets/products.json";
 import roomMaster from "../public/roomMaster.json";
 import { EntriesContext } from "./EntriesContext";
+import theme from "./theme";
 
 const InputGroup = () => {
   const [areas, setAreas] = useState([])
@@ -205,6 +206,7 @@ const InputGroup = () => {
           variant="contained"
           disableElevation
           disabled={buttonDisable}
+          sx={{color: '#fff'}}
         >
           Calculate
         </Button>
