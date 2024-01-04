@@ -18,7 +18,7 @@ const App = () => {
     <EntriesContext.Provider value={{ entries, setEntries }}>
       <Container>
         <Typography variant="h6" sx={{ m: 2, mb: 0, fontWeight: 600 }}>
-          Estimate Calculation For Coating With NanoMagic
+          Estimate Calculation For Coating With NanoMagic (Products Only)
         </Typography>
         <Typography variant="body1" sx={{ m: 2, mt: 0 }}>
           Please Enter Your Details

@@ -88,15 +88,21 @@ const EntriesTable = () => {
 
   const handlePrint = useReactToPrint({
     content: () => TableRef.current,
-    copyStyles: true
+    copyStyles: true,
+    pageStyle: true
   });
 
 
 
   return (
-    <div style={{ flex: 1, margin: "2rem", marginRight: 0, marginTop: 0 }}>
+    <div style={{ flex: 1, margin: "2rem", bgcolor: 'red' }}>
       <TableContainer ref={TableRef}>
         <Table>
+          {openPopup && (
+            <TableHead>
+              <TableCell sx={{ textAlign: 'center' }} colSpan={8}><img src="https://seplnanomagic.com/wp-content/uploads/2023/12/SEPL-Nano-Logo-new-100px-1.png" alt="Sepl nano magic logo" /></TableCell>
+            </TableHead>
+          )}
           <TableHead sx={{ bgcolor: '#fff', '&:hover': { bgcolor: '#fff' } }}>
             <TableRow>
               <TableCell sx={headCellStyles}>Area Name</TableCell>
@@ -106,7 +112,9 @@ const EntriesTable = () => {
               <TableCell sx={headCellStyles}>Selected Product</TableCell>
               <TableCell sx={headCellStyles}>Quantity Required</TableCell>
               <TableCell sx={headCellStyles}>Bottles Required</TableCell>
-              <TableCell sx={headCellStyles}>Total Cost</TableCell>
+              <TableCell colSpan={9} sx={headCellStyles} align="right">Total Cost</TableCell>
+              <TableCell sx={{borderBottom: 0}} align="right"></TableCell>
+              <TableCell sx={{borderBottom: 0}} align="right"></TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -133,22 +141,22 @@ const EntriesTable = () => {
                 <TableCell sx={bodyCellStyles}>
                   {parseFloat(entry.result.bottlesRequired)}
                 </TableCell>
-                <TableCell sx={bodyCellStyles}>
+                <TableCell colSpan={3} align="right" sx={bodyCellStyles}>
                   ₹ {numberWithIndianFormat(entry.result.totalCost)}
                 </TableCell>
               </TableRow>
             ))}
             <TableRow>
-              <TableCell colSpan={7} sx={bodyCellStyles} align="right">
+              <TableCell colSpan={8} sx={bodyCellStyles} align="right">
                 Total Cost:
               </TableCell>
-              <TableCell sx={bodyCellStyles}>₹ {numberWithIndianFormat(totalCost)}</TableCell>
+              <TableCell align="right" sx={bodyCellStyles}>₹ {numberWithIndianFormat(totalCost)}</TableCell>
             </TableRow>
           </TableBody>
         </Table>
 
 
-        <Stack mt={3} display={!openPopup ? 'none' : 'block'}>
+        <Stack mt={3}>
           <Typography variant="body1" fontWeight={600}>Terms and conditions:-</Typography>
           <List disablePadding sx={{ listStyleType: 'disc' }}>
             <ListItem sx={{ display: 'list-item' }} disablePadding><Typography variant="body2">These are product cost estimation only.</Typography></ListItem>
