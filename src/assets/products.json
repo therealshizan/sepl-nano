@@ -57,7 +57,7 @@
       "product": "Fabric, Textile & Leather Coating",
       "mrp1Litre": 3498.7,
       "netRate": 2965,
-      "approxApplicationCoverageAreaPerLitre": null,
+      "approxApplicationCoverageAreaPerLitre": "1 sq. ft",
       "approxCostPerSqFt": 29.65,
       "costOf100MlRsExclusiveOfGst": 296.5,
       "shelfLife": {

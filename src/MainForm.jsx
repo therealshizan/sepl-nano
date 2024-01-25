@@ -18,21 +18,21 @@ const MainForm = () => {
     setInputGroups(newInputGroups);
   };
   return (
-    <div style={{ flex: 2, border: "1px solid #00000025" }}>
+    <div style={{ flex: 2, border: "1px solid #00000025", display: 'flex', flexDirection: 'column-reverse' }}>
       {inputGroups.map((inputGroup) => inputGroup)}
       <ButtonGroup
         sx={{
           display: "flex",
           justifyContent: "space-around",
           boxShadow: 0,
-          m: 2,
+          mt: 2,
         }}
         variant="contained"
       >
         <Button
           size="small"
           onClick={addMoreArea}
-          sx={{bgcolor: '#D7B56D', '&:hover': {bgcolor: '#D7B56D'}}}
+          sx={{ bgcolor: '#D7B56D', '&:hover': { bgcolor: '#D7B56D' } }}
         >
           Add More Area
         </Button>

@@ -362,19 +362,139 @@
         },
         {
             "projectType": "Commercial",
-            "roomName": "Chairman Cabin",
-            "roomShortCode": "CC",
-            "roomFullName": "Chairman Cabin -CC",
-            "roomCode": "1R16",
+            "roomName": "Cubical Staff Area",
+            "roomShortCode": "CS",
+            "roomFullName": "Cubical Staff Area -CS",
+            "roomCode": "1R18",
             "floor": "1st Floor"
         },
         {
             "projectType": "Commercial",
-            "roomName": "Chairman Bath Room",
-            "roomShortCode": "CX",
-            "roomFullName": "Chairman Bath Room -CX",
-            "roomCode": "1R17",
+            "roomName": "Manager Cabin",
+            "roomShortCode": "MC",
+            "roomFullName": "Manager Cabin -MC",
+            "roomCode": "1R19",
             "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "HR Head Cabin",
+            "roomShortCode": "HC",
+            "roomFullName": "HR Head Cabin -HC",
+            "roomCode": "1R20",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Working Staff Area",
+            "roomShortCode": "W1",
+            "roomFullName": "Working Staff Area -W1",
+            "roomCode": "1R21",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Accounts Manager",
+            "roomShortCode": "AC",
+            "roomFullName": "Accounts Manager -AC",
+            "roomCode": "1R22",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Server Room",
+            "roomShortCode": "SR",
+            "roomFullName": "Server Room -SR",
+            "roomCode": "1R23",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Executive Toilet",
+            "roomShortCode": "EX",
+            "roomFullName": "Executive Toilet -EX",
+            "roomCode": "1R24",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Ladies Toilet",
+            "roomShortCode": "LX",
+            "roomFullName": "Ladies Toilet -LX",
+            "roomCode": "1R25",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Gents Toilet",
+            "roomShortCode": "GX",
+            "roomFullName": "Gents Toilet -GX",
+            "roomCode": "1R26",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Pantry Room",
+            "roomShortCode": "PR",
+            "roomFullName": "Pantry Room -PR",
+            "roomCode": "1R27",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Conference Room",
+            "roomShortCode": "CR",
+            "roomFullName": "Conference Room -CR",
+            "roomCode": "1R28",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Meeting Room-1",
+            "roomShortCode": "MR",
+            "roomFullName": "Meeting Room-1 -MR",
+            "roomCode": "1R29",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Meeting Room-2",
+            "roomShortCode": "MR",
+            "roomFullName": "Meeting Room-2 -MR",
+            "roomCode": "1R30",
+            "floor": "1st Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Cabin-1",
+            "roomShortCode": "C1",
+            "roomFullName": "Cabin-1 -C1",
+            "roomCode": "2R01",
+            "floor": "2nd Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Cabin-2",
+            "roomShortCode": "C2",
+            "roomFullName": "Cabin-2 -C2",
+            "roomCode": "2R02",
+            "floor": "2nd Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Reception Area",
+            "roomShortCode": "RA",
+            "roomFullName": "Reception Area -RA",
+            "roomCode": "2R03",
+            "floor": "2nd Floor"
+        },
+        {
+            "projectType": "Commercial",
+            "roomName": "Waiting Area",
+            "roomShortCode": "WA",
+            "roomFullName": "Waiting Area -WA",
+            "roomCode": "2R04",
+            "floor": "2nd Floor"
         }
     ]
 }
